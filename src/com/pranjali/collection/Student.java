@@ -54,14 +54,16 @@ public class Student implements Comparable<Student> {
 
 	@Override
 	public int compareTo(Student student) {
-		if (id == student.id) {
-			return 0;
-
-		} else if (id > student.id) {
-			return 1;
-		} else {
-			return -1;
-		}
+//		if (id == student.id) {
+//			return 0;
+//
+//		} else if (id > student.id) {
+//			return 1;
+//		} else {
+//			return -1;
+//		}
+		return stuName.compareTo(student.stuName);
 	}
+	
 
 }
